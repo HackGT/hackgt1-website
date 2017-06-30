@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+script:
+  - .travis.d/build.sh
+
+env:
+  global:
+    - DOCKER_ID_USER="hackgt"
+
